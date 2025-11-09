@@ -1,0 +1,491 @@
+
+/*  let a=72;
+let b=7;
+let c;
+
+if(a>b)
+{
+   c="some if";
+}
+else if(a==b){
+    c="else if";
+}
+
+else{
+    c="else";
+}
+console.log(c)  */
+
+
+// SWITCH CASE
+
+  let a=1;
+switch(a){
+    case 1:
+        console.log("one")
+        break;
+    case 2:
+        console.log("two")
+        break;
+    case 3:
+        console.log("three")
+        break;
+    default:
+        console.log("none")
+    } 
+ 
+
+
+    //  if(10==="10"){
+    //         console.log("same")
+    //     }
+    //     else{
+    //         console.log("not same")
+    //     }
+
+
+
+
+// condition?true:false
+// //conditional operator
+// let a=5
+// let b
+// b=a>=10?"greater":"less"
+// console.log(b) 
+ 
+
+
+//while loop
+/* let a=5
+while(a>0)
+{
+    console.log(a)
+    a--;
+   
+}  */
+ 
+ 
+
+//do..while loop
+
+//  i=18
+ 
+//  do{
+//     i=i-1
+//     console.log(i);
+    
+// } while(i>10) 
+
+ 
+
+
+//for loop
+
+// for(x=5;x<=7;x++)
+// {
+// console.log(x)
+// } 
+
+
+
+
+//user input 
+// let a=confirm("click ... ")
+// console.log(a)
+// if(a)
+// {
+//     alert("ok")
+// }
+// else{
+//     alert("no")
+// } 
+// alert("don't")
+
+// let my=prompt("enter the value");
+// if(my){
+//     console.log(my);
+//     console.log(typeof(my) )
+// console.log(my.trim().length); 
+// }
+// else
+// {
+//     console.log("you didn't enter name");
+// }
+
+
+
+// nw try anbu
+/*let my=prompt("enter the value"); 
+let ky=prompt("enter the value");
+n=Number.parseInt(my)
+m=Number.parseInt(ky)
+
+    console.log(n+m);*/
+
+
+    // new try anbu
+/*
+    let y=prompt("Enter your value")
+    i=y
+    c=0
+    for(let a=i;a>0;a=Number.parseInt(a/10))
+        {
+            r=a%10//3
+            c=(c*10)+r
+            
+            console.log(a,c)
+        
+        }
+        alert("Number : "+c)*/
+
+        // Anbu new try
+
+    //     a=prompt("enter your value")
+      
+    //    for(let a=i;a>0;a*a)
+    //     {
+    //         b=Number.parseInt(a)
+    //         console.log(b)
+              
+    //     }
+      
+
+/* alert("something") */
+
+/* 
+let name=prompt("Enter the Name")
+console.log(name) */
+
+
+//Functions
+
+//   function print()
+// {
+//     console.log("print something");
+//     console.log("balakrishnan");
+//     console.log("09/12/1997");
+// }
+
+// print()
+// print()
+// print() 
+
+//    function r()
+//  { 
+//     return "something else"
+// }
+// console.log(r()) 
+ 
+
+
+   /* function sum(n1,n2){
+    if(n2===undefined)
+    {
+        return n1
+    }
+    return n1+n2 ;
+   
+}
+console.log(sum(24,28));
+console.log(sum(9)); 
+
+
+function email(mail)
+{
+    let result=mail.slice(0,mail.indexOf("@"))
+    return result;
+}
+let mail123="kkpr2512@gmail.com";
+console.log(email(mail123)) 
+
+
+ function properCase(name)
+ {
+    return name.charAt(0).toUpperCase()+ name.slice(1).toLowerCase();
+}
+ console.log(properCase("anbu")) 
+
+  */
+
+ /*function sum(n1,n2){
+    if(n2===undefined)
+    {return n1}
+    return n1+n2 ;
+}
+
+const email = function (mail)
+{
+    let result=mail.slice(0,mail.indexOf("@"))
+    return result;
+}
+
+const properCase =(name) =>
+{
+    return name.charAt(0).toUpperCase()+ name.slice(1).toLowerCase();
+}
+
+console.log(sum(24,28));
+console.log(email("karthikeyan56@gmail.com"))
+console.log(properCase("karthiKEyan"))
+
+
+
+//Scope var, let,const
+//global scope, function scope, block scope
+
+*/
+
+//Arrays
+ 
+
+/* 
+const  myArray= ["12","hi",12,12.7]
+ console.log(myArray)
+ console.log(myArray.length,myArray[2])
+
+ myArray.push("click");//adding element at last position
+ myArray.unshift("hello");//adding element at first position
+ console.log(myArray)
+ console.log(myArray.length)
+ console.log(myArray[0])
+ console.log(myArray[myArray.length-1]) 
+
+  myArray.pop();//deleting element at last position  'hello', 'hi', 'guys', 525, true, 'click'
+ console.log(myArray)
+ myArray.shift();//deleting element at first position
+ console.log(myArray)
+ delete myArray[2];//deleting element at position but it gives empty position
+ console.log(myArray)
+ myArray.splice(2,2);//deleting element at position and number of items
+ console.log(myArray)
+ myArray.splice(2,2,"vanakkam","hsadkf");//replace element at position and number of items
+ console.log(myArray)
+ 
+const newArray=myArray.slice(1,3);
+console.log(newArray)
+const neArray=myArray.reverse();
+console.log(neArray)
+const nArray=myArray.join();
+console.log(nArray)
+const Array=nArray.split(',');
+console.log(Array) */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const  myArray= ["12","hi",12,12.7]
+let myArrayA =["false",58,456]; 
+console.log(myArrayA);
+
+ const ArrayB=myArray.concat(myArrayA);
+console.log(ArrayB);
+ 
+ const Arrayc=[...myArray,...myArrayA];
+console.log(Arrayc); 
+
+const ArrayD=[ArrayB,Arrayc];
+const ArrayE=[myArrayA,Arrayc]
+console.log(ArrayD);
+console.log(ArrayD[1][1]);
+
+const ArrayF=[ArrayD,ArrayE];
+console.log(ArrayF)
+console.log(ArrayF[0][0][0])   */
+
+
+
+
+
+//object
+
+/* const myObj={name:"karthi"};
+
+const anotherObj={
+    regno:true,
+    no: 100000,
+    content:{
+        earn:"JSON",
+        grow:"stocks"
+    },
+    array:["life","long"],
+
+    action: function(){
+        return "hi guys";
+    },
+
+    attack: function(){
+        return `Earn by learning ${this.content.earn}`;
+    }
+};
+
+console.log(myObj.name)
+
+console.log(anotherObj.content.earn+" "+anotherObj.array[0])
+console.log(anotherObj["array"])
+console.log(anotherObj.action())
+console.log(anotherObj.attack())
+  */
+
+//inheritance
+
+/*  const vehicle={
+    door:2,
+    engine:function(){
+        return  "vrroon!"
+    }
+}
+
+const car=Object.create(vehicle);
+car.wheel=4;
+
+console.log(car.engine());
+console.log(car);
+
+const tesla=Object.create(car);
+console.log(tesla.door);
+ 
+const movie={
+    actor:"kavin",
+    music:"arr",
+    director:"Lockesh",
+    producer:"anbu"
+};
+movie.actress="hgj"//adding
+delete movie.producer;
+console.log(Object.keys(movie))
+console.log(Object.values(movie))
+//inline for
+for(let job in movie){
+    console.log(`${job}, it's ${movie[job]}`);
+}
+//destructing object
+const {music: myFavMusicDr, director: myFavDr}=movie;
+const {actor,music, director,actress}=movie;
+console.log(myFavMusicDr)
+console.log(myFavDr)
+console.log(actor) */
+
+
+
+
+
+//class
+//  const mypizza={
+//     size:"medium",
+//     crust:"original",
+//     bake:function(){
+//         return console.log(`Baking a ${this.size} ${this.crust} crust pizza`)
+//     }
+// }
+/* 
+class pizza{
+    constructor(pizzaType,pizzaSize,pizzaCrust){
+        this.type=pizzaType
+        this.size=pizzaSize;
+        this.crust=pizzaCrust;
+        this.toppings=[];
+    }
+    getTopping(){
+        return this.toppings;
+    }
+    setToppings(topings){
+        this.toppings.push(topings);
+    }
+    bake(){
+        return console.log(`Baking a ${this.size} ${this.type} ${this.crust} crust pizza with ${this.toppings}` )
+    }
+}
+
+const anotherPizza=new pizza("new","small","crust");
+
+anotherPizza.setToppings("sausage");
+anotherPizza.setToppings("egg");
+anotherPizza.bake()
+console.log(anotherPizza.getTopping()) */
+
+
+// class pizza{
+//     tomato="two";//public
+//     #potato="none";//private 
+//     constructor(pizzaSize){
+//         this.size=pizzaSize;
+//         this.crust="Original";  
+//     }
+//     getCrust(){
+//         return this.toppings;
+//     }
+//     setCrust(crustPizza){
+//         this.crust=crustPizza;
+//     }  
+// }
+
+// class specialPizza extends pizza{
+//     constructor(sizePizza){
+//         super(sizePizza);
+//         this.type="Margarita"
+//     }
+//     slice(){
+//         console.log(`Our ${this.type} ${this.size} ${this.crust}pizza has 8 Slices`)
+//     }
+// }
+
+// const myPizza =new specialPizza("Medium");
+// myPizza.slice(); 
+
+//JSON
+//JAVA SCRIPT OBJECT NOTATION
+//TO SEND AND RECEIVE DATA IN MANY PROGRAMING LANGUAGES
+
+/*  const myObj={
+    name:"Karthi",
+    content:["java","Script","html"],
+    sub: function(){
+        console.log("thank you")
+    }
+};
+console.log(myObj);
+console.log(myObj.name);
+myObj.sub();
+
+const sendJSON= JSON.stringify(myObj);
+console.log(sendJSON)
+
+const receiveJSON=JSON.parse(sendJSON);
+console.log(receiveJSON);  */
+
+//Error Handling
+/* "use strict";
+
+const variable="java";
+console.log(variable); */
+
+//try catch
+/* 
+const makeError=() => {
+    try{
+        const name="muruga";
+         name="sivan"; 
+    }catch(err){
+        console.error(err.stack)
+    }finally{
+        console.log("***finally**")
+    }
+};
+
+makeError();
+     */
+
+
+// const now = new Date();
+// console.log(now.toString()); // Full date and time string
+// console.log(now.toLocaleString()); // Localized format
+// console.log(now.toISOString()); // ISO 8601 format

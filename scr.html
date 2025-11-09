@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Animation Example</title>
+  <style>
+   body {
+      margin: 0;
+      height: 200vh; /* make page scrollable */
+      font-family: sans-serif;
+      background-image: url("../css/images/houses.webp");
+    }
+
+    .box {
+      width: 500px;
+      height: 500px;
+      background-image:url("../css/images/nw.webp");
+      position: absolute;
+      top: 150vh; /* start lower down */
+      right: 50%;
+      transform: rotateX(-50deg);
+      opacity: 0;
+      transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    }
+
+    .box.visible {
+      opacity: 1;
+      transform: rotate(-50deg); /* move up a bit */
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color:rgb(225, 5, 5); padding:50px;"><center>SCROLL DOWN👇</center> </h1>
+  <div class="box"></div>
+
+  <script>
+    const box = document.querySelector('.box');
+
+    window.addEventListener('scroll', () => 
+    {
+      const scrollY = window.scrollY; // current scroll position
+      const triggerpoint = window.innerHeight * 0.5; // 80% of viewport height
+      const boxTop = box.getBoundingClientRect().top;
+      console.log(boxTop,triggerpoint)
+      if (boxTop <triggerpoint) 
+      {
+        box.classList.add('visible');
+      }
+       else 
+       {
+        box.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

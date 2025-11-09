@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NEW FORM</title>
+    </head>
+    <body>
+        <form action="">
+        <fieldset><h1><center>DETAILS</h1></center></fieldset>
+       
+        
+        <p>
+        <label for="name">NAME</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        </p>
+       <p>
+        <label for="age">AGE</label>
+        <input type="number" name="age" id="age" min="18" max="60">
+        </p>
+         <p>
+            <label for="place">PLACE</label>
+            <input type="text" name="" id="place">
+            </p>
+            </form>
+             <div id="output"></div>
+        <div id="sub" onClick="submit()">submit</div>
+        <p  id="res"></p>
+        
+        <script>
+    function submit()
+    {
+         const name=document.querySelector("#name")
+        const age=document.querySelector("#age")
+        const place=document.querySelector("#place")
+        // alert(name.value)
+        // alert(date.value)
+        // alert(email.value)
+      
+      console.log(typeof(age.value))
+      console.log(Number(age.value))
+      console.log(age.value>=18)
+    if((Number(age.value>="18")))
+       {
+        document.querySelector("#res").textContent="you are eligible";
+       }
+       else{
+        alert ("you are not eligible")
+       }
+
+    }
+    </script>
+    </body>
+</html>

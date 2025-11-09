@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NEW FORM</title>
+    </head>
+    <body>
+        <form action="">
+        <fieldset><h1><center>DETAILS</h1></center></fieldset>
+       
+        
+        <p>
+        <label for="name">NAME</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        </p>
+       <p>
+        <label for="age">AGE</label>
+        <input type="number" name="age" id="age" min="18" max="60">
+        </p>
+       
+        <p>
+            <label for="pass">PASSWORD</label>
+            <input type="password" name="pass" id="pass">
+
+        </p>
+        <p>
+            <label for="date">DATE</label>
+            <input type="date" name="" id="date">
+            </p>
+            <p>
+            <label for="email">EMAIL</label>
+            <input type="email" name="" id="email" ></p>
+        </form>
+        <p><button onclick="showConfirmed()">SUBMIT</button></p>
+        <p><button onclick="openNewWindow()">CHOOSE FILE</button></p>
+        <button onclick="showCanceled()">CANCEL</button>
+        <div id="output"></div>
+        <div id="sub" onClick="submit()">submit</div>
+        <p id="res"></p>
+        <script>
+    function showConfirmed()
+    {
+        var userconfirmed=confirm('Do you Want To Proceed');
+        if(userconfirmed)
+        {
+            document.getElementById('output').innerText='userconfirmed';
+        }
+         
+    }
+    function showCanceled()
+    {
+        document.getElementById('output').innerText='userCanceled';
+        }
+    
+    function openNewWindow()
+    {
+        window.open('http://www.gmail.com','_blank','width=800','height=600');
+
+    }
+    function submit()
+    {
+        const name=document.querySelector("#name")
+        const date=document.querySelector("#date")
+        const email=document.querySelector("#email")
+        // alert(name.value)
+        // alert(date.value)
+        // alert(email.value)
+        document.querySelector("#res").textContent=name.value + "  " +date.value + "  "+ email.value;
+      console.log(typeof(email.value))
+      console.log(email.value)
+      console.log(email.value==30)
+    if((email.value==="karthi@gmail.com"))
+       {
+        alert("this is okay")
+       }
+       else{
+        alert ("not okay")
+       }
+
+    }
+    </script>
+    </body>
+</html>

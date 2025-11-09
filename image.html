@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Styles Demo</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            font-family: maximum voltage;
+        }
+
+        .image-container {
+            margin: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px 10px 50px 40px;
+           
+        }
+        @font-face
+        {
+             font-family: maximum voltage;
+            src: url(font/maximum_voltage/Maximum\ Voltage.ttf);
+        }
+      img:hover{
+        width: 210px;
+        transition: 1.0s;
+      }
+    .grayscale {
+         filter: grayscale(100%); 
+        
+        }
+        .sepia {
+            filter: sepia(100%);
+        }
+        .blur {
+            filter: blur(1px);
+        }
+
+        .brightness {
+            filter: brightness(50%);
+        }
+
+        .contrast {
+            filter: contrast(50%);
+        }
+
+        .opacity {
+            filter: opacity(100%);
+        }
+
+        .hue-rotate {
+            filter: hue-rotate(180deg);
+        }
+        .clip{
+     font-weight: 700;
+     font-size: 6rem;
+   text-align: center;
+   font-family: maximum voltage;
+   background-image: url(image/clg\ \(8\).jpg);
+   background-size: 200%;
+   background-position: bottom;
+   -webkit-background-clip: text;  
+ 
+    color: rgba(19, 17, 17, 0.1); 
+}
+    </style>
+</head>
+<body>
+    <header>IMAGE VARIETIES</header>
+    
+    <div class="image-container">
+        <h3>Grayscale</h3>
+        <img class="grayscale" src="images/car.jpg" alt="Grayscale Image">
+    </div>
+    <div class="image-container">
+        <h3>Sepia</h3>
+        <img class="sepia" src="images/flower.jpg" alt="Sepia Image">
+    </div>
+    <div class="image-container">
+        <h3>Blur</h3>
+        <img class="blur" src="images/flower.jpg" alt="Blur Image">
+    </div>
+    <div class="image-container">
+        <h3>Brightness</h3>
+        <img class="brightness" src="images/car.jpg" alt="Brightness Image">
+    </div>
+    <div class="image-container">
+        <h3>Contrast</h3>
+        <img class="contrast" src="images/car.jpg" alt="Contrast Image">
+    </div>
+    <div class="image-container">
+        <h3>Opacity</h3>
+        <img class="opacity" src="images/flower.jpg" alt="Opacity Image">
+    </div>
+    <div class="image-container">
+        <h2>Hue Rotate</h2>
+        <img class="hue-rotate" src="images/car.jpg" alt="Hue Rotate Image">
+    </div>
+
+
+
+    <div class="clip">University</div>
+<footer>COMPLETED</footer>
+  </body>
+</html>

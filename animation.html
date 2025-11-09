@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Example</title>
+    <style>
+
+   
+.top {
+  
+    position: relative;
+
+    animation-name: pi;                  
+    animation-duration: 10s;          
+    animation-timing-function: ease-in-out; 
+    animation-delay: 1ms;                   
+}
+
+
+@keyframes pi {
+    0% { 
+        top:0;  
+       /* background-color: red;*/
+    }
+    50% {
+        top:300px;
+        left: 300px;
+       /* background-color: rgb(35, 98, 180);*/
+        width: 500px;
+        height: 500px;
+    }
+    100% {
+        top:0;
+        left: 0;
+      /*  background-color: rgba(207, 87, 177, 0.795);*/
+        width: 100px;
+        height: 100px;
+    }
+}
+
+    </style>
+</head>
+<body>
+   
+    <img class="top" src="images/logo.jpg">
+</html>

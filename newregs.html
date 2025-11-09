@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NEW REGISTRASTION FORM</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin:20px;
+            }
+            .container{
+                max-width:400px;
+                margin:0 auto;
+                text-align: center;
+            }
+            input{
+                width:100px;
+                padding: 10px;
+                margin:10px ;
+                border: 1px solid rgb(212, 159, 80);
+                border-radius: 4px;
+            }
+            button{
+                padding:10px 20px;
+                background-color:aquamarine;
+                color:white;
+                border:none;
+                border-radius:4px;
+                cursor:pointer;
+            }
+        </style>
+    <body>
+        <div id="container">
+        <form id="LoginForm">
+            <p>
+            <label for="name">NAME</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            </p>
+            <p>
+                <label for="pass">PASSWORD</label>
+                <input type="password" name="pass" id="pass">
+            </p>
+            <p>
+                <label for="pass">CONFIRM PASSWORD</label>
+                <input type="password" id="confirmpassword" placeholder=" confirmPassword" required>
+
+            </p>
+            <p>
+                <label for="date">DATE</label>
+                <input type="date" name="" id="date">
+            </p>
+            <p>
+                <label for="age">AGE</label>
+                <input type="number" name="age" id="age" min="18" max="60">
+              
+            </p>
+            <p>
+                <label for="place">PLACE</label>
+                <input type="text" name="" id="place">
+            </p>
+            
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="Email" placeholder="Enter Email requireds">
+            </p>
+            <p>
+                <button type="submit">SUBMIT</button>
+            </p>
+
+        </form>
+        <div id="message"></div>
+        </div>
+        
+        <div id="output"></div>
+        <p id="res"></p>
+        <script>
+            function showConfirmed()
+            {
+                const age=document.querySelector("#age")
+                console.log(Number(age.value))
+                console.log(age.value>=18)
+                if((Number(age.value>=18)))
+            {
+                document.querySelector("#res").textContent="you are eligible";
+            }
+            else
+            {
+                alert("you are not eligible");
+            }
+            }
+            function submit()
+            {
+               const Email=document.getElementById('Email').value;
+               const messageDiv=document.getElementById('message');
+               console.log(typeof(Email))
+               if(Email.includes("@")&&Email.includes(".")&&Email.split(".")[1].length>1)
+               {
+                messageDiv.style.color="green";
+                messageDiv.textcontent='Email is valid';
+
+               }
+               else{
+                messageDiv.style.color="red";
+                messageDiv.textcontent='Invalid Email Format';
+               }
+            }
+          /*  function showAlert()
+            {
+                alert('Helo!This is not');
+
+            }*/
+        </script>
+    </body>
+</html>

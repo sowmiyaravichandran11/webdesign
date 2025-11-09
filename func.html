@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        ADVANCED JAVASCRIPT
+    </title>
+</head>
+
+<body>
+    <h1>EXAMPLE JAVASCRIPT</h1>
+    <p id="clock"></p>
+    <button onclick="showAlert()">SHOWALERT</button>
+    <button onclick="showConfirmed()">SHOWCONFIRMED</button>
+    <button onclick="showprompt()">SHOWPROMPT</button>
+    <button onclick="openNewWindow()">OPENNEWWINDOW</button>
+    <button onclick="stopClock()">STOPCLOCK</button>
+    <div id="output"></div>
+    <script>
+        function showAlert() {
+            alert('This is a Simple Alret');
+        }
+        function showConfirmed() {
+            var userConfirmed = confirm("Do You Want Proceed");
+            if (userConfirmed) {
+                document.getElementById('output').innerText = 'UserConfirmed';
+            }
+            else {
+                document.getElementById('output').innerText = 'UserConfirmed';
+
+            }
+        }
+        function showprompt() {
+            var userInput = prompt('please Enter your Name:', 'Guest');
+            if (userInput !== null) {
+                document.getElementByID('output').innerText = 'Hello', +userInput + '!';
+
+            }
+            
+        }
+        function openNewWindow() {
+            window.open('https://www.google.com', '_blank', 'width=800,height=600');
+        }
+        var clockInterval = setInterval(function () {
+            var now = new Date();
+            var timeString = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+            document.getElementById('clock').innerText = 'currentTime:' + timeString;
+        }, 1000);
+
+        function stopClock() {
+            clearInterval(clockInterval);
+            document.getElementById('clock').innerText = 'clockStopped!';
+
+        }
+        setTimeout(function () {
+            alert('This alert is Shown After 5 seconds!');
+        }, 5000);
+    </script>
+
+</body>
+
+</html>
