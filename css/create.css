@@ -1,0 +1,121 @@
+*{
+    padding:0;
+    margin:0;
+    }
+    h1{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    header{
+        display:inline;
+        justify-content: space-between;
+        align-items:center;
+       background-color:rgb(150, 196, 23);
+       
+    }
+    body{
+       
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        background-color:beige;
+        font-family: Georgia, 'Times New Roman', Times, serif;                                                       
+    }
+    .item{
+        padding:10px;
+        margin:10px;
+        border:2px solid rgb(112, 101, 101);
+        background-color: rgb(183, 202, 202);
+    }
+    .image-container{
+        margin:10px;
+        text-align: center;
+    }
+    img{
+        width:200px;
+        height:auto;
+          transition:2s;
+        border-radius:5px 5px 10px 10px;
+    }
+   /*img:hover{
+        width:210px;
+        transition:2s;
+    }
+    /*.grayscale{
+        filter:grayscale(100%);
+    }
+     .sepia{
+        filter:sepia(100%);
+    }
+     .blur{
+        filter:blur(1px);
+    }*/
+   /*  .brightness{
+        filter:brightness(100%);
+    }
+     /*.contrast{
+        filter:contrast(100%);
+    }
+     .opacity{
+        filter:opacity(30%);
+    }
+     .hue-rotate{
+        filter:rotate(180deg);
+    }*/
+    .now{
+        color:red;
+    }
+    .noww{
+        margin:2px;
+        padding:5px;
+        color:blue;
+    }
+    header .head{
+        display:flex;
+        align-items: center;
+    }
+    header .head img{
+        border-radius: 25%;
+            }
+            ul{
+                list-style:none;
+
+            }
+            header li{
+                display:inline;
+                margin:2px;
+                padding:2px;
+            }
+            .card img{
+                width:100%;
+            }
+            .container{
+               display: flex;
+               flex-wrap: wrap;
+
+            }
+            .clip{
+                font-weight:500;
+                font-size: 5rem;
+                text-align:center;
+                background-image:url(../images/flower.jpg);
+                background-size: 100%;
+                background-position: bottom;
+                -webkit-background-clip: text;
+                color:crimson;
+            }
+                      
+           .card{
+                background-color: rgb(235, 172, 36);
+                color:white;
+                text-align:center;
+                box-shadow:2px 2px 4px black;
+                margin:10px;
+                width:500px;
+            }
+            footer{
+                background-color:rgb(140,140,253);
+            }
+            main{
+                width: 500vw;
+            }

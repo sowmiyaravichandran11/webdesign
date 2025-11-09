@@ -1,0 +1,84 @@
+*{
+    padding: 0%;
+    margin:0%;
+}
+#home{
+    width: 99vw;
+    height: 150vh;
+    background-image: url("../images/nw.webp");
+    background-repeat: no repeat;
+    background-size: cover;
+    display: flex;
+     align-items:center;
+    justify-content:center;
+    font-size: 2rem;
+   
+}
+#home ul{
+     position: absolute;
+    top: 10px;
+    right: 200px;
+}
+#home h1{
+    color: rgb(19, 51, 66);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#home h3{
+     position: absolute;
+    right:50px;
+    top:100px;
+     color:rgb(78, 91, 150);
+}
+#home code{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(53, 116, 168);
+}
+#title{
+     position: relative; 
+     animation-name: mov;
+    animation-duration:1s;
+    animation-timing-function:ease-in-out;
+    animation-delay:0s;
+}
+@keyframes mov{
+    0%{
+        left:100vw;
+
+    }
+  
+        100%{
+           left:0;
+        }
+}
+nav ul{
+    margin-left:20px;
+    margin-top:10px;
+
+}
+nav a{
+    text-decoration: wavy;
+    color: rgb(28, 35, 124);
+    padding: 2px;
+}
+nav a:hover{
+    background-color: rgb(54, 51, 47);
+    color: rgb(12, 23, 88);
+}
+nav ul li{
+    display: inline;
+    
+}
+
+.item{ 
+   position:absolute;
+    top:100px;
+    left:30px;
+    
+}
+.item img{
+    border-radius: 40%;
+    width:80px;
+    height:70px;
+
+}
+

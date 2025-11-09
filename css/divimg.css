@@ -1,0 +1,30 @@
+
+*{
+    padding:10px;
+    border: 0px;
+    margin: 0px;
+
+} 
+body{
+    background-color: black;
+    color:white;
+
+}
+div{
+    
+        background-image: url(../images/car.jpg);
+   width: 200vh;
+   height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+
+
+
+body #h12{
+     background-color: darkorange;
+     text-align: center;
+     font-size:2rem;
+     
+}

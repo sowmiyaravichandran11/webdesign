@@ -1,0 +1,27 @@
+*{
+    padding:20px;
+    border:10px;
+    border-style: dotted 10 px;
+    margin:5px;
+
+}
+body{
+    background-color: black;
+    color:white;
+
+}
+div{
+    height: 50px;
+    width: 30px;
+    background-color: rgb(100, 170, 216);
+    margin-bottom: 2px;
+
+}
+div .first{
+    background-color: salmon;
+
+}
+body #new{
+     background-color: darkorange;
+     
+}
